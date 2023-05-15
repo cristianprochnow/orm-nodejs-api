@@ -1,6 +1,19 @@
 import app from './app.js';
 import { PORT } from './config/const.js';
+import connection from './config/db.js';
+import { error, log } from './utils/log.js';
 
-app.listen(PORT, function() {
-  console.log('[server] > server started...');
-});
+connection
+  .sync()
+  .then(run)
+  .catch(fail);
+
+function run() {
+  log(`[server] > server is running at ${PORT}`);
+
+  app.listen(PORT);
+}
+
+function fail() {
+  error('[server] > server failure at init...');
+}
