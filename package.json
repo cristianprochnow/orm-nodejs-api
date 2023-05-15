@@ -1,0 +1,26 @@
+{
+  "name": "orm-nodejs-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianprochnow/orm-nodejs-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristianprochnow/orm-nodejs-api/issues"
+  },
+  "homepage": "https://github.com/cristianprochnow/orm-nodejs-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "sequelize": "^6.31.1",
+    "sqlite3": "^5.1.6"
+  }
+}
