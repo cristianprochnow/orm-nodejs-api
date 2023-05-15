@@ -9,11 +9,11 @@ connection
   .catch(fail);
 
 function run() {
-  log(`[server] > server is running at ${PORT}`);
+  log(`server is running at ${PORT}`);
 
   app.listen(PORT);
 }
 
 function fail() {
-  error('[server] > server failure at init...');
+  error('server failure at init...');
 }
