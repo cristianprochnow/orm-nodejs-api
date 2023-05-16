@@ -1,5 +1,4 @@
 import { Sequelize } from 'sequelize';
-
 import { DB_DIALECT, DB_PATH } from './const.js';
 
 const connection = new Sequelize({

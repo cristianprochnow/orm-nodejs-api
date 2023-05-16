@@ -1,5 +1,4 @@
 import Sequelize from 'sequelize';
-
 import connection from '../config/db.js';
 
 const Professor = connection.define('Professor', {
