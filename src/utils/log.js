@@ -1,20 +1,20 @@
 /**
- * @param {string} message 
+ * @param {string} text 
  */
-function message(message) {
-  return `[app] > ${message}`;
+function message(text) {
+  return `[app] > ${text}...`;
 }
 
 /**
- * @param {string} message 
+ * @param {string} text 
  */
-export function log(message) {
-  console.log(message(message));
+export function log(text) {
+  console.log(message(text));
 }
 
 /**
- * @param {string} message 
+ * @param {string} text 
  */
-export function error(message) {
-  console.error(message(message));
+export function error(text) {
+  console.error(message(text));
 }
