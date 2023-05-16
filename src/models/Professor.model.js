@@ -9,7 +9,8 @@ const Professor = connection.define('Professor', {
   },
   NOME: Sequelize.STRING(100),
   CPF: Sequelize.STRING(20),
-  DATA_NASCIMENTO: Sequelize.DATE
+  DATA_NASCIMENTO: Sequelize.DATE,
+  EMAIL: Sequelize.STRING(40)
 });
 
 export default Professor;
